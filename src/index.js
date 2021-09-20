@@ -4,12 +4,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store";
 import { Provider } from "react-redux";
+import Dapp from "./App";
 import "./styles/reset.css";
 import "./styles/theme.css";
 
 ReactDOM.render(
   <Provider store={store}>
     <App />
+    <Dapp />
   </Provider>,
   document.getElementById("root")
 );
